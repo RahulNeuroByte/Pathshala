@@ -62,3 +62,14 @@ logs/
 *.swp
 .DS_Store
 Thumbs.db
+GENERATION_STATUS.md
+LOCKED_FILES.md
+PROJECT_MANIFEST.md
+completeguide.md
+docker_setup.md
+github_and_deployment_guide.md
+EXECUTION.md
+DATABASE_SETUP.md
+CONTEXT_SUMMARY.md
+AUDIT_REPORT.md
+docs/
