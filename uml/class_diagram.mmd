@@ -1,0 +1,33 @@
+classDiagram
+    User "1" -- "1" Role
+    User "1" -- "0..1" StudentProfile
+    User "1" -- "0..1" FacultyProfile
+    Department "1" -- "*" Course
+    Course "1" -- "*" Subject
+    StudentProfile "*" -- "1" Department
+    StudentProfile "*" -- "1" Course
+    FacultyProfile "*" -- "1" Department
+    
+    class User {
+        +int id
+        +string username
+        +string email
+        +string password_hash
+        +bool is_active
+    }
+    class Role {
+        +int id
+        +string name
+    }
+    class StudentProfile {
+        +int id
+        +string roll_no
+        +string first_name
+        +string last_name
+    }
+    class FacultyProfile {
+        +int id
+        +string employee_id
+        +string first_name
+        +string last_name
+    }

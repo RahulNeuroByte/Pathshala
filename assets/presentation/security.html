@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+      }
+      .content-side {
+        width: 800px;
+        padding-top: 80px;
+        padding-left: 100px;
+      }
+      .accent-side {
+        width: 480px;
+        background-color: #D64545;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #102A43;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        line-height: 1.1;
+      }
+      .point-box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 20px;
+        margin-top: 10px;
+        flex-shrink: 0;
+      }
+      .point-title {
+        font-weight: 900;
+        font-size: 28px;
+        color: #102A43;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .point-desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4;
+        max-width: 600px;
+      }
+      .security-icon {
+        font-size: 120px;
+        color: #F0F4F8;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-side">
+            <h2 class="title">Security &<br>Reliability</h2>
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Authentication</h3>
+                    <p class="point-desc">Secure JWT-based access control with encrypted token handling and session management.</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Authorization</h3>
+                    <p class="point-desc">Granular Role-Based Access Control (RBAC) ensuring users only access permitted modules.</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Containerization</h3>
+                    <p class="point-desc">Docker-based deployment for consistent, isolated, and reliable environments across all stages.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accent-side">
+            <div class="security-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>

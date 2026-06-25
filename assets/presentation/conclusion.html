@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 180px;
+        box-sizing: border-box;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .main-content {
+        padding-top: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
+        flex-grow: 1;
+      }
+      .summary-text {
+        font-weight: 900;
+        font-size: 48px;
+        color: #102A43;
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        max-width: 900px;
+      }
+      .contact-info {
+        display: flex;
+        gap: 60px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 16px;
+        flex-shrink: 0;
+      }
+      .contact-label {
+        font-weight: 900;
+        font-size: 20px;
+        color: #102A43;
+        text-transform: uppercase;
+        margin-right: 10px;
+      }
+      .contact-value {
+        font-weight: 400;
+        font-size: 20px;
+        color: #334E68;
+      }
+      .accent-footer {
+        width: 100%;
+        height: 40px;
+        background-color: #D64545;
+        margin-top: auto;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Conclusion</h2>
+        </div>
+        <div class="main-content">
+            <p class="summary-text">Pathshala ERP: The future of academic administration is here.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="marker"></div>
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value">support@pathshala.edu</span>
+                </div>
+                <div class="contact-item">
+                    <div class="marker"></div>
+                    <span class="contact-label">Website:</span>
+                    <span class="contact-value">www.pathshala.edu</span>
+                </div>
+            </div>
+        </div>
+        <div class="accent-footer"></div>
+    </div>
+</body>
+</html>

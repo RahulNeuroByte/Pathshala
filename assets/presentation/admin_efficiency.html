@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 180px;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+      }
+      .content-grid {
+        padding-top: 80px;
+        padding-left: 100px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+      }
+      .module-card {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-bottom: 20px;
+      }
+      .module-title {
+        font-weight: 900;
+        font-size: 32px;
+        color: #102A43;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        line-height: 1.1;
+      }
+      .module-desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: -0.02em;
+      }
+      .accent-line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: #D64545;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Administrative Efficiency</h2>
+        </div>
+        <div class="content-grid">
+            <div class="module-card">
+                <div class="marker"></div>
+                <h3 class="module-title">Fee Management</h3>
+                <p class="module-desc">Automated fee structures, digital payment tracking, and instant receipt generation for financial transparency.</p>
+            </div>
+            <div class="module-card">
+                <div class="marker"></div>
+                <h3 class="module-title">Library System</h3>
+                <p class="module-desc">Comprehensive digital cataloging, automated issuance tracking, and overdue alert management.</p>
+            </div>
+            <div class="module-card">
+                <div class="marker"></div>
+                <h3 class="module-title">Leave Management</h3>
+                <p class="module-desc">Structured approval workflows for faculty and students with real-time balance tracking and reporting.</p>
+            </div>
+        </div>
+        <div class="accent-line"></div>
+    </div>
+</body>
+</html>

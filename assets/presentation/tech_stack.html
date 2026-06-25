@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 180px;
+        box-sizing: border-box;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .content-area {
+        padding-top: 60px;
+        padding-left: 100px;
+        display: flex;
+        gap: 40px;
+      }
+      .tech-card {
+        width: 340px;
+        background-color: #FFFFFF;
+        border: 2px solid #102A43;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 380px;
+        box-sizing: border-box;
+      }
+      .tech-title {
+        font-weight: 900;
+        font-size: 28px;
+        color: #D64545;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .tech-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #102A43;
+        margin-right: 12px;
+        margin-top: 8px;
+        flex-shrink: 0;
+      }
+      .tech-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      .tech-main {
+        font-weight: 900;
+        font-size: 22px;
+        color: #102A43;
+        margin-bottom: 5px;
+        display: block;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Technical Excellence</h2>
+        </div>
+        <div class="content-area">
+            <div class="tech-card">
+                <h3 class="tech-title">Backend</h3>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">FastAPI</span>
+                        <p class="tech-text">Python 3.11 for high-performance, asynchronous API development.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">SQLAlchemy</span>
+                        <p class="tech-text">Robust ORM for secure and efficient data mapping.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <h3 class="tech-title">Database</h3>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">MySQL</span>
+                        <p class="tech-text">Reliable relational database for complex academic data.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">Indexing</span>
+                        <p class="tech-text">Optimized query performance for large-scale records.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <h3 class="tech-title">Frontend</h3>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">React + TS</span>
+                        <p class="tech-text">Type-safe, component-based UI for modern user experience.</p>
+                    </div>
+                </div>
+                <div class="tech-item">
+                    <div class="marker"></div>
+                    <div>
+                        <span class="tech-main">Tailwind CSS</span>
+                        <p class="tech-text">Utility-first styling for responsive and consistent design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 160px;
+        box-sizing: border-box;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding-top: 60px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+      .module-column {
+        display: flex;
+        flex-direction: column;
+      }
+      .module-title {
+        font-weight: 900;
+        font-size: 28px;
+        color: #102A43;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        border-left: 8px solid #D64545;
+        padding-left: 16px;
+      }
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 16px;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 12px;
+        margin-top: 8px;
+        flex-shrink: 0;
+      }
+      .feature-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Core Modules</h2>
+        </div>
+        <div class="content-grid">
+            <div class="module-column">
+                <h3 class="module-title">User Management</h3>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Comprehensive RBAC system with granular permissions.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Secure JWT-based authentication and session handling.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Unified profile management for all stakeholders.</p>
+                </div>
+            </div>
+            <div class="module-column">
+                <h3 class="module-title">Student Lifecycle</h3>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">End-to-end tracking from admission to graduation.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Academic record management and performance history.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Personalized student dashboards and portals.</p>
+                </div>
+            </div>
+            <div class="module-column">
+                <h3 class="module-title">Faculty Records</h3>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Detailed faculty profiles and resource allocation.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Departmental mapping and workload management.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="marker"></div>
+                    <p class="feature-text">Faculty-student interaction and mentorship tracking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

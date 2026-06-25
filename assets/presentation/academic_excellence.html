@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 180px;
+        box-sizing: border-box;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .content-grid {
+        padding-top: 60px;
+        padding-left: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 1080px;
+      }
+      .module-box {
+        width: 320px;
+      }
+      .module-title {
+        font-weight: 900;
+        font-size: 28px;
+        color: #102A43;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        border-bottom: 4px solid #D64545;
+        padding-bottom: 10px;
+      }
+      .list-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 12px;
+        margin-top: 8px;
+        flex-shrink: 0;
+      }
+      .item-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Academic Excellence</h2>
+        </div>
+        <div class="content-grid">
+            <div class="module-box">
+                <h3 class="module-title">Attendance</h3>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Real-time student and faculty monitoring.</p>
+                </div>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Automated reporting and alerts for low attendance.</p>
+                </div>
+            </div>
+            <div class="module-box">
+                <h3 class="module-title">Exams</h3>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Seamless scheduling and evaluation workflows.</p>
+                </div>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Automated result processing and grade generation.</p>
+                </div>
+            </div>
+            <div class="module-box">
+                <h3 class="module-title">Assignments</h3>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Digital creation and submission lifecycle.</p>
+                </div>
+                <div class="list-item">
+                    <div class="marker"></div>
+                    <p class="item-text">Integrated feedback and grading system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

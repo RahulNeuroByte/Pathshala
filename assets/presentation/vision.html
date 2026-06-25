@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+        margin-top: -1px; /* nudge up by 1px so total height is strictly < 720px */
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px; /* keep title upper padding unchanged */
+        padding-left: 100px;
+        min-height: 180px;
+        box-sizing: border-box;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .content-area {
+        padding-top: 48px; /* reduced from 64px to lift content up further */
+        padding-left: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px; /* slightly reduced gap to save a bit of vertical space */
+      }
+      .point-box {
+        width: 500px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 20px;
+        margin-top: 8px; /* slightly reduced to save space */
+        flex-shrink: 0;
+      }
+      .point-title {
+        font-weight: 900;
+        font-size: 32px;
+        color: #102A43;
+        margin-bottom: 8px; /* reduced from 10px */
+        text-transform: uppercase;
+      }
+      .point-desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.4; /* tightened from 1.5 */
+        letter-spacing: -0.02em;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">The Vision</h2>
+        </div>
+        <div class="content-area">
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Scalability</h3>
+                    <p class="point-desc">Designed to grow seamlessly with your institution's expanding needs and user base.</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Maintainability</h3>
+                    <p class="point-desc">Clean, modular architecture ensures long-term reliability and ease of updates.</p>
+                </div>
+            </div>
+            <div class="point-box">
+                <div class="marker"></div>
+                <div>
+                    <h3 class="point-title">Efficiency</h3>
+                    <p class="point-desc">Streamlining administrative workflows to save time and reduce operational overhead.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

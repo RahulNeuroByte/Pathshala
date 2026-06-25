@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #F0F4F8;
+        font-family: 'Inter', sans-serif;
+        color: #334E68;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-block {
+        background-color: #102A43;
+        width: 100%;
+        padding-top: 60px;
+        padding-left: 100px;
+        min-height: 160px;
+      }
+      .title {
+        font-weight: 900;
+        font-size: 64px;
+        color: #F0F4F8;
+        text-transform: uppercase;
+      }
+      .main-content {
+        display: flex;
+        padding-top: 60px;
+        padding-left: 100px;
+        gap: 80px;
+      }
+      .text-side {
+        width: 500px;
+      }
+      .chart-side {
+        width: 500px;
+      }
+      .point-box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+      }
+      .marker {
+        width: 8px;
+        height: 8px;
+        background-color: #D64545;
+        margin-right: 20px;
+        margin-top: 10px;
+        flex-shrink: 0;
+      }
+      .point-title {
+        font-weight: 900;
+        font-size: 28px;
+        color: #102A43;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .point-desc {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      .chart-container {
+        background-color: #FFFFFF;
+        border: 2px solid #102A43;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 350px;
+      }
+      .chart-label {
+        font-weight: 900;
+        font-size: 16px;
+        color: #102A43;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-block">
+            <h2 class="title">Data-Driven Insights</h2>
+        </div>
+        <div class="main-content">
+            <div class="text-side">
+                <div class="point-box">
+                    <div class="marker"></div>
+                    <div>
+                        <h3 class="point-title">Analytics Dashboards</h3>
+                        <p class="point-desc">Role-based visual insights providing real-time overview of institutional performance.</p>
+                    </div>
+                </div>
+                <div class="point-box">
+                    <div class="marker"></div>
+                    <div>
+                        <h3 class="point-title">Dynamic Reporting</h3>
+                        <p class="point-desc">Automated generation of comprehensive PDF and Excel reports for all administrative modules.</p>
+                    </div>
+                </div>
+                <div class="point-box">
+                    <div class="marker"></div>
+                    <div>
+                        <h3 class="point-title">Notification System</h3>
+                        <p class="point-desc">Instant alerts and announcements ensuring seamless communication across the campus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-side">
+                <div class="chart-container">
+                    <p class="chart-label">Projected System Adoption</p>
+                    <div style="height: 250px;">
+                        <canvas id="adoptionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const ctx = document.getElementById('adoptionChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Month 1', 'Month 2', 'Month 3', 'Month 4', 'Month 5'],
+                datasets: [{
+                    label: 'Active Users',
+                    data: [150, 450, 800, 1200, 1800],
+                    backgroundColor: '#D64545',
+                    borderColor: '#102A43',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: { color: '#F0F4F8' },
+                        ticks: { font: { family: 'Inter', weight: 'bold' } }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { font: { family: 'Inter', weight: 'bold' } }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

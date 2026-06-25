@@ -1,0 +1,144 @@
+{
+  "project_info": {
+    "title": "Introduction",
+    "created": 1781909404.855,
+    "last_updated": 1781909538.2,
+    "total_slides": 12
+  },
+  "slides": [
+    {
+      "id": "intro",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "vision",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "core_modules",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "academic_excellence",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "admin_efficiency",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "insights",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "tech_stack",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "security",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "scalability",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "conclusion",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "qa",
+      "state": "edited",
+      "pageNum": 12
+    }
+  ],
+  "outline": [
+    {
+      "id": "intro",
+      "title": "Introduction",
+      "summary": "Project name, tagline, and presenter information.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "vision",
+      "title": "The Vision",
+      "summary": "Scalability, maintainability, and efficiency goals.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "core_modules",
+      "title": "Core Modules",
+      "summary": "User management, student lifecycle, and faculty management.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "academic_excellence",
+      "title": "Academic Excellence",
+      "summary": "Attendance tracking, exam management, and assignment system.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "admin_efficiency",
+      "title": "Administrative Efficiency",
+      "summary": "Fee management, library system, and leave management.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "insights",
+      "title": "Data-Driven Insights",
+      "summary": "Analytics dashboards, dynamic reporting, and notification system.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "tech_stack",
+      "title": "Technical Excellence",
+      "summary": "Backend, database, and frontend technologies.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "security",
+      "title": "Security & Reliability",
+      "summary": "Authentication, authorization, and containerization.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "scalability",
+      "title": "Scalability & Performance",
+      "summary": "Optimized queries, modular design, and high availability.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Future Roadmap",
+      "summary": "Mobile app, AI integration, and advanced integrations.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "conclusion",
+      "title": "Conclusion",
+      "summary": "Final summary and contact information.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "qa",
+      "title": "Q&A",
+      "summary": "Invitation for questions and closing remarks.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}
