@@ -1,6 +1,7 @@
 services:
   db:
     image: mysql:8.0
+    restart: unless-stopped
     environment:
       MYSQL_DATABASE: pathshala_db
       MYSQL_ROOT_PASSWORD: password
@@ -10,22 +11,31 @@ services:
       - db_data:/var/lib/mysql
       - ../database/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
       - ../database/seed_data.sql:/docker-entrypoint-initdb.d/2-seed.sql
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-ppassword" ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
 
   backend:
     build:
       context: ..
       dockerfile: docker/Dockerfile
+    restart: unless-stopped
     ports:
       - "8000:8000"
     environment:
       DATABASE_URL: mysql+mysqlconnector://root:password@db/pathshala_db
     depends_on:
-      - db
+      db:
+        condition: service_healthy
 
   frontend:
     build:
       context: ..
       dockerfile: docker/Dockerfile.frontend
+    restart: unless-stopped
     ports:
       - "3000:80"
     depends_on:
